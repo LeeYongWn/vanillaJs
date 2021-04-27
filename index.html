@@ -1,0 +1,425 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Gulp Sample</title> 
+    <link rel="stylesheet" href="./style/default.css" />
+</head>
+<body> 
+    <header class="header">
+       <div class="header__inner">
+  <div class="header-utilities">
+    <a class="header-utilities__logo" href="#"><img src="assets/img/logo.svg" alt=""></a>
+  </div>
+  <!-- /.header-utilities -->
+  <nav>
+    <ul class="header-nav">
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴1</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴2</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴3</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴4</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴5</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#">메뉴6</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- /.header__inner -->
+    </header>
+
+    <section>
+      <div class="content">
+         <div class="content__inner">
+            <main class="content__main">
+                <article>
+                  <!-- <h2 class="level2-heading">
+                      LinkedIn B2B 마케팅 필수 가이드
+                  </h2>
+                  <p>
+                      B2B 마케터분들 중 소셜 미디어로부터의 리드 획득에 고민하고 있는 분들은 없습니까? Facebook이나 Twitter가 UX를 향상하기 위해 알고리즘을 변경함에 따라 기업이나 브랜드 투고의 오가닉 도달은 계속해서 감소합니다. 하지만 걱정할 필요가 없습니다. LinkedIn에서의 마케팅 활동이 리드 획득, 소트 리더십을 활용한 프로모션, 
+                      자사 사이트로의 트래픽 향상에 도움이 되기 때문입니다. LinkedIn을 활용해 B2B 마케팅을 성공하기 위한 방법을 모았습니다.
+                  </p>
+                  <h3 class="level3-heading">
+                      지금 브랜드에 LinkedIn B2B 마케팅이 필요한 이유
+                  </h3>
+                  <p>
+                      B2B 기업 블로그나 웹사이트로의 소셜 트래픽 중 90%는 LinkedIn, Twitter, Facebook의 3대 SNS가 차지하고 있으며 그 절반은 LinkedIn입니다. 열성 '채굴자'들은 개척되지 않은 부분을 발굴해 LinkedIn을 활용한 B2B 마케팅에서 이미 다음과 같은 많은 장점들을 발견했습니다.  
+                  </p>
+                  <p>
+                      소셜 미디어로부터 기업 사이트로 유입하는 모든 방문 수중 64%가 LinkedIn을 통한 방문자입니다. B2B 마케터의 93%는 LinkedIn이 리드를 취득하는 가장 효과적인 사이트라고 생각하고 있습니다. LinkedIn은 최근 발표된 인게이지먼트 비율이 60% 넘게 상승했다는 영예에 자만하지 않고 계속 진화하고 있습니다.<br>
+                      <br>
+                      (출처:
+                      <a href="https://foundationinc.co/lab/BtoB-marketing-linkedin-stats/">https://foundationinc.co/lab/BtoB-marketing-linkedin-stats/</a>
+                      )
+                  </p> -->
+
+                  <h2 class="level2-heading">
+                     셀렉트 박스 
+                  </h2>
+
+                  <div class="selectBox">
+                    <label for="select" class="selectBox__label"><span class="selectBox__txt"></span></label>
+                    <select id="select" class="selectBox__select">
+                      <option value="">전체</option>
+                      <option value="1" opt="">사업관리</option>
+                      <option value="276" opt="">경영·회계·사무</option>
+                      <option value="1687" opt="">금융·보험</option>
+                      <option value="3479" opt="">교육·자연·사회과학</option>
+                      <option value="4167" opt="">법률·경찰·소방·교도·국방</option>
+                      <option value="5239" opt="">보건·의료</option>
+                      <option value="5938" opt="">사회복지·종교</option>
+                      <option value="7238" opt="">문화·예술·디자인·방송</option>
+                      <option value="11098" opt="">운전·운송</option>
+                      <option value="13259" opt="">영업판매</option>
+                      <option value="14378" opt="">경비·청소</option>
+                      <option value="14770" opt="">이용·숙박·여행·오락·스포츠</option>
+                      <option value="17985" opt="">음식서비스</option>
+                      <option value="18818" opt="">건설</option>
+                      <option value="25638" opt="">기계</option>
+                      <option value="33028" opt="">재료</option>
+                      <option value="35864" opt="">화학</option>
+                      <option value="38664" opt="">섬유·의복</option>
+                      <option value="40097" opt="">전기·전자</option>
+                    </select>
+                  </div>
+                  <!-- /.selectBox -->
+                  
+                  <div class="selectBox">
+                    <label for="select2" class="selectBox__label"><span class="selectBox__txt"></span></label>
+                    <select id="select2" class="selectBox__select">
+                      <option value="">전체</option>
+                      <option value="60887" opt="">4차산업혁명</option>
+                      <option value="60888" opt="">외국어</option>
+                      <option value="60893" opt="">컴퓨터 활용 (OA)</option>
+                      <option value="60899" opt="">리더십</option>
+                      <option value="60906" opt="">코칭</option>
+                      <option value="60907" opt="">인문학</option>
+                      <option value="60915" opt="">CS/상담</option>
+                      <option value="60919" opt="">자격증</option>
+                      <option value="60920" opt="">법정교육</option>
+                      <option value="60929" opt="">직무기초능력</option>
+                    </select>
+                  </div>
+                  <!-- /.selectBox -->                      
+                </article>
+
+                <article>
+                  <h2 class="level2-heading">
+                     탭 
+                  </h2>         
+                  
+                 <div class="tab-nav js-tab hp-mt20">
+                    <ul class="tab-nav__inner" role="tablist">
+                      <li class="tab-nav__item active" data-tabnum='0'><a href="#" class="tab-nav__link" role="tab">과일</a></li>
+                      <li class="tab-nav__item" data-tabnum='1'><a href="#" class="tab-nav__link" role="tab">채소</a></li>
+                      <li class="tab-nav__item" data-tabnum='2'><a href="#" class="tab-nav__link" role="tab">고기</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <section role="tabpanel" class="tab-pane active" data-tabcontent='0'>
+        
+                        <p>과일 혹은 과실은 사람과 동물이 식용하는 열매의 총칭이다.</p>
+      
+                      </section>
+                      <section role="tabpanel" class="tab-pane" data-tabcontent="1">
+      
+                        <p>식물성 식품의 한 분류. 보통 식물의 종자인 곡식과 열매인 과일을 제외한 식물성 식품을 가리킨다.</p>
+      
+                      </section>
+                      <section role="tabpanel" class="tab-pane" data-tabcontent="2">
+      
+                        <p>일반적으로 온갖 동물들의 먹을 수 있는 살(근육, 지방)을 뜻한다. 넓게 보면 동물의 몸이나 살 그 자체를 뜻한다.</p>
+      
+                      </section>
+                    </div>
+                  </div>
+                  <!-- /.tab-nav -->
+              
+                  <div class="tab-nav tab-nav-full js-tab hp-mt20">
+                      <ul class="tab-nav__inner" role="tablist">
+                        <li class="tab-nav__item active" data-tabnum='0'><a href="#" class="tab-nav__link" role="tab">과일</a></li>
+                        <li class="tab-nav__item" data-tabnum='1'><a href="#" class="tab-nav__link" role="tab">채소</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <section role="tabpanel" class="tab-pane active" data-tabcontent='0'>
+          
+                          <p>과일 혹은 과실은 사람과 동물이 식용하는 열매의 총칭이다.</p>
+        
+                        </section>
+                        <section role="tabpanel" class="tab-pane" data-tabcontent="1">
+        
+                          <p>식물성 식품의 한 분류. 보통 식물의 종자인 곡식과 열매인 과일을 제외한 식물성 식품을 가리킨다.</p>
+        
+                        </section>
+                      </div>
+                  </div>
+                  <!-- /.tab-nav -->
+                </article>
+                
+                <article>
+                  <h2 class="level2-heading">
+                      아코디언
+                  </h2>
+
+                  <dl class="accordion js-accordion hp-mt20">
+                    <dt class="accordion__row accordion__row-question">
+                      <span class="blind">(질문)</span>
+                      <a href="#" class="accordion__question-link" title="이곳을 클릭시 내용이 제공됩니다.">
+                         좋아하는 음식이 무엇입니까?
+                      </a>
+                    </dt>
+                    <dd class="accordion__row accordion__row-answer">
+                      <span class="blind">(답변)</span>
+                      <div class="accordion__answer-body">
+                         고기입니다.
+                      </div>
+                    </dd>
+                    <dt class="accordion__row accordion__row-question">
+                      <span class="blind">(질문)</span>
+                      <a href="#" class="accordion__question-link" title="이곳을 클릭시 내용이 제공됩니다.">
+                         좋아하는 음식이 무엇입니까? (2줄 테스트)  좋아하는 음식이 무엇입니까? (2줄 테스트)  좋아하는 음식이 무엇입니까? (2줄 테스트) 좋아하는 음식이 무엇입니까? (2줄 테스트)
+                      </a>
+                    </dt>
+                    <dd class="accordion__row accordion__row-answer">
+                      <span class="blind">(답변)</span>
+                      <div class="accordion__answer-body">
+                          OOCSS를 시작으로 SMACSS, BEM, FLOCSS, PRECSS 일체에 대응할 수 있습니다. 어떤 기법을 사용할 것인지는 요구사항 특성에 따라 결정합니다.
+                      </div>
+                    </dd>
+                  </dl>
+                  <!-- /. accordion -->
+
+                  <dl class="accordion accordion-faq js-accordion hp-mt20">
+                    <dt class="accordion__row accordion__row-question">
+                      <span class="blind">(질문)</span>
+                      <a href="#" class="accordion__question-link" title="이곳을 클릭시 내용이 제공됩니다.">
+                         당신의 혈액형은 무엇입니까?
+                      </a>
+                    </dt>
+                    <dd class="accordion__row accordion__row-answer">
+                      <span class="blind">(답변)</span>
+                      <div class="accordion__answer-body">
+                         A형입니다.
+                      </div>
+                    </dd>
+                    <dt class="accordion__row accordion__row-question">
+                      <span class="blind">(질문)</span>
+                      <a href="#" class="accordion__question-link" title="이곳을 클릭시 내용이 제공됩니다.">
+                         아코디언이 BEM 모듈 , 바닐라 JS로 제작 되엇고 IE 9부터 사용 가능하다는게 사실입니까?
+                      </a>
+                    </dt>
+                    <dd class="accordion__row accordion__row-answer">
+                      <span class="blind">(답변)</span>
+                      <div class="accordion__answer-body">
+                         네 사실입니다.
+                      </div>
+                    </dd>
+                  </dl><!-- /.accordion accordion-faq -->
+                </article>
+
+                <article>
+                    <h2 class="level2-heading">
+                      모달 
+                    </h2>
+
+                    <button type="button" class="btn btn-blue js-modal-open" data-name="modal">
+                      일목요연
+                    </button>
+
+                    <button type="button" class="btn btn-blue js-modal-open" data-name="modal2">
+                      마이동풍
+                    </button>      
+                    
+                    <div class="modal">
+                      <div class="modal__inner" data-modal="modal">
+                        <div class="modal__content">
+                            <div class="modal__header">
+                              <div class="modal__header-title">
+                                 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목 2줄 이상 자동 제목          
+                              </div>
+                              <a href="#" class="modal__header-close js-modal-close">X</a>
+                            </div>
+                            <div class="modal__body">
+                                 <p>일목요연</p>
+            
+                                 <p>한눈에 알아볼 수 있게 밝고 뚜렷함. 한 번만 보면 분명하게 알 수 있다는 뜻이죠. 나아가 한눈에 알아볼 수 있게 잘 정돈되고 조리 있게 만들어진 것을 가리키기도 합니다.</p>
+            
+                                 <div class="vertical-table hp-mt20">
+                                  <table class="vertical-table__inner">
+                                    <thead class="vertical-table__headers">
+                                      <tr class="vertical-table__header-row">
+                                        <th class="vertical-table__header">소속</th>
+                                        <th class="vertical-table__header">직종</th>
+                                        <th class="vertical-table__header">특기 분야</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="vertical-table__body">
+                                      <tr class="vertical-table__body-row">
+                                        <td class="vertical-table__text">주식회사 24-7 / 주식회사 제이펍</td>
+                                        <td class="vertical-table__text">테크니컬 디렉터 / 시니어 엔지니어</td>
+                                        <td class="vertical-table__text">CSS 설계, HubSpot CMS</td>
+                                      </tr>
+                                      <tr class="vertical-table__body-row">
+                                        <td class="vertical-table__text">주식회사 제이펍</td>
+                                        <td class="vertical-table__text">엔지니어</td>
+                                        <td class="vertical-table__text">Vue.js / Nuxt.js</td>
+                                      </tr>
+                                      <tr class="vertical-table__body-row">
+                                        <td class="vertical-table__text">주식회사 제이펍</td>
+                                        <td class="vertical-table__text">엔지니어</td>
+                                        <td class="vertical-table__text">Adobe XD</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                            <div class="modal__footer">
+                                <button type="button" class="btn btn-blue js-modal-close">
+                                  닫기
+                                </button>
+                            </div>
+                          </div>
+                        </div>   
+                        <!-- /. modal__inner -->            
+                        
+                        <div class="modal__inner" data-modal="modal2">
+                          <div class="modal__content">
+                              <div class="modal__header">
+                                <div class="modal__header-title modal__header-title-nowrap">
+                                   제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략 제목 길이 생략
+                                </div>
+                                <a href="javacript:void(0)" class="modal__header-close js-modal-close">X</a>
+                              </div>
+                              <div class="modal__body">
+                                마이동풍          
+            
+                                말의 귀에 동풍이라는 뜻으로, 남의 비평(批評)이나 의견(意見)을 조금도 귀담아 듣지 아니하고 흘려 버림을 이르는 말 
+                              </div>
+                              <div class="modal__footer">
+                                  <button type="button" class="btn btn-blue js-modal-close">
+                                    닫기
+                                  </button>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- /. modal__inner -->
+                        <div class="modal__bg"></div>
+                    </div>         
+                    <!-- /.modal -->
+                </article>
+            </main><!-- /. content_main -->
+
+            <aside class="content__side">
+                <h2 class="level4-heading">
+                  최신 아티클
+                </h2>
+                <ul class="vertical-posts">
+                  <li class="vertical-posts__item">
+                      <div class="vertical-posts__header"></div>
+                      <a class="vertical-posts__title" href="#">[다국어 사이트 구축하기] ① 대상 언어/영역과 URL 방식 선정</a>
+                  </li>
+                  <li class="vertical-posts__item">
+                      <div class="vertical-posts__header"></div>
+                      <a class="vertical-posts__title" href="#">미팅 스케줄을 쉽게! 비즈니스에서 사용할 수 있는 일정 관리 도구, Top 4</a>
+                  </li>
+                  <li class="vertical-posts__item">
+                      <div class="vertical-posts__header"></div>
+                      <a class="vertical-posts__title" href="#">B2B 콘텐츠 마케팅 전략에서의 LinkedIn 활용법</a>
+                  </li>
+                </ul>
+            </aside><!-- /. content__side -->
+        </div><!-- /. content_inner -->      
+      </div><!-- /. content -->
+    </section>
+
+    <footer>
+        <div class="footer">
+    <div class="footer__inner">
+      <nav>
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">자사 특징</a>
+            <ul class="footer-child-nav">
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">강점</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">정책</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">서비스</a>
+            <ul class="footer-child-nav">
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">웹사이트 구축</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">웹사이트 개선</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">분석/레포팅</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">다국어 웹사이트 구축</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">포트폴리오</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">기업 정보</a>
+            <ul class="footer-child-nav">
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">메시지</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">기업 소개</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">채용 정보</a>
+            <ul class="footer-child-nav">
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">신입 사원</a>
+              </li>
+              <li class="footer-child-nav__item">
+                <a class="footer-child-nav__link" href="#">경력 사원</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">블로그</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.footer__inner -->
+  </div>
+  <!-- /.footer -->
+
+  <div class="footer footer--border-top-gray">
+    <div class="footer__inner">
+      <small class="footer-copyright">© 2020 Triad Inc.</small>
+    </div>
+    <!-- /.footer__inner -->
+  </div>
+  <!-- /.footer footer--border-top-gray -->        
+    </footer>
+    <script type="text/javascript" src="./script/common.js"></script>
+</body>
+</html>
